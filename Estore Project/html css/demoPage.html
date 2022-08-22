@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Review Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<style>
+    body{
+        color: black;
+        background-color: black;
+        
+    }
+    html, body {
+max-width: 100%;
+overflow-x: hidden;
+}
+.nav{
+  height: auto;
+  width: 100%;
+}
+.nav ul{
+  list-style-type: none;
+  margin : 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: green;
+}
+
+.nav li{
+  float: left;
+  display: block;
+  padding: 8px;
+  background-color:gray;   
+  border-right: 1px solid #bbb;
+}
+li :hover{
+  background-color:black  ;
+}
+.nav  li a  {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+
+}
+    .iframe-container{
+      
+ color:white;
+  /* padding-right: 50px; */
+  position: relative;
+  width: 80%;
+  margin: auto;
+  margin-top:100px ;
+  height: 100%;  
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* .iframe-container iframe{
+    padding-top:100 px;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} */
+
+
+</style>
+<body>
+    navigation bar
+    <div class="nav">
+        <ul>
+            <li> <img src="logo4.jpg" wight="100" height="42"></li>
+            <li><a href="myhomepage.html">Home</a></li>
+            <li><a href="maincategory.html">Shop By Categories</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="newaboutus.html">About Us</a></li>
+            <h3 style="color:white;display: inline-block;margin: 15px 10px 5px">E Store</h3>
+            <li style="float:right"><a href="loginpage1.html">Login</a></li>
+        </ul>
+    </div>
+    
+          
+      <div class="iframe-container">
+        <div style="width:100%;text-align: center;">
+          <h1 class="heading">Reviews of Our BOAT products </h1>
+    <!-- <hr>Review of our BOAT products<hr> -->
+    <hr width="150px"  style="background-color:white;height:2px;margin-bottom: 90px;">
+        </div>
+    <iframe margin-right:3em width="500" height="315" src="https://www.youtube.com/embed/W25iUt1ZfpQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/gYRn8sO_BoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    
+
+         
+      <div class="iframe-container">
+        <div style="width:100%;text-align: center;">
+          <h1 class="heading">Reviews of our Laptops </h1>
+    <!-- <hr>Review of our Laptops<hr> -->
+    <hr width="150px"  style="background-color:white;height:2px;margin-bottom: 90px;">
+        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6fPj6mj-M_k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lVgl_NhYNBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    
+</body>
+</html>

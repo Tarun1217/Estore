@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sign Up</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+    <!-- <script src='script.js'></script> -->
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        background: url('https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=726&q=80');
+        background-size: cover;
+    }
+    form{
+        margin-top: 50px;
+        text-align: center;
+        color: black;
+    }
+    input{
+        display: block;
+        width: 350px;
+        height: 40px;
+        margin: 20px;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        border-bottom: 1px solid white;
+        background: transparent;
+        color: aliceblue;
+    }
+    button{
+        width: 350px;
+        height: 40px;
+        font-size: 20px;
+        background-color: grey;
+        border: none;
+        color: white;
+        margin-top: 20px;
+    }
+    form h1{
+        margin-bottom: 20px;
+        color: aliceblue;
+    }
+    ::placeholder{
+
+        color: whitesmoke;
+    }
+</style>
+<body>
+    <form id="SignUpForm">
+        <h1>Sign UP</h1>
+        <input type="text" name="" id="firstName" placeholder="First name">
+        <input type="text" name="" id="lastName" placeholder="Last name">
+        <input type="email" name="" id="email" placeholder="Email">
+        <input type="password" name="" id="password" placeholder="Password">
+        <!-- <input type="password" name="" id="confirmPassword" placeholder="Confirm Password"> -->
+        <button type="submit" id="SaveData">Create Account</button>
+    </form>
+
+    <script>
+
+        var items=[...document.querySelectorAll("input")];
+        
+        document.querySelector("button").addEventListener('click',function(){
+
+            
+                if(items[3].value.length<8){
+                    alert("password is too short!!")
+                }
+    
+        }) 
+    </script>
+
+        
+
+<!-- // document.querySelector("#SaveData").addEventListener("click", (event) => {
+//     debugger;
+
+//     const fName = document.getElementById("firstName").value;
+//     const lName = document.getElementById("lastName").value;
+//     const email = document.getElementById("email").value;
+//     const password = document.getElementById("password").value;
+
+//     var NewUser={ fName : fName, 
+//         lName:lName,
+//         email:email,
+//         password:password};
+    
+//         // const fs = require('fs')
+//         // const fileSystem = require("browserify-fs")
+
+
+// const data = JSON.stringify(NewUser)
+
+// var _user = localStorage.getItem('Users');
+// if(_user!= null){
+//     var _users =  JSON.parse(_user)
+//     _users.push(NewUser) ;
+//     localStorage.setItem('Users', JSON.stringify(_users));
+
+// }else{
+//     var _users = [];
+//     _users.push(NewUser) ;
+//     localStorage.setItem('Users', JSON.stringify(_users));
+// }
+// // fileSystem.writeFile("./Users.json", data, err=>{
+// //  if(err){
+// //    console.log("Error writing file" ,err)
+// //  } else {
+// //    console.log('JSON data is written to the file successfully')
+// //  }
+// // })
+
+//   document.getElementById("output-box").innerHTML += "Sorry! <code>preventDefault()</code> won't let you check this!<br>";
+//   event.preventDefault();
+// }, false); -->
+
+    <!-- </script> -->
+     <!-- <script type="text/javascript" src="Users.json"></script> -->
+
+</body>
+</html>
