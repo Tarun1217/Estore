@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title> feedback</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+    }
+    
+    body{
+        display: flex;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+        background-image: url('images/feed.jpg');
+        background-size: cover;
+    }
+    .container{
+        width: 360px;
+        background: black;
+        opacity: 0.6;
+        position: fixed;
+        margin-left: 400px;
+        margin-top: 50px;
+    }
+    .container form{
+        width: 100%;
+        text-align: center;
+        padding: 25px 20px;
+
+    }
+    form h1{
+        padding:10px 0;
+        color: aliceblue;
+    }
+    form .id{
+        position: relative;
+    }
+    .form i{
+        font-size: 20px;
+        top:50%;
+        right: 20px;
+        transform: translate(-50%);
+        color: aliceblue;
+    }
+    form input{
+        width: 100%;
+        height: 50px;
+        margin: 4px 0;
+        border: 1px solid goldenrod;
+        border-radius: 3px;
+        background: black;
+        padding: 0 15px;
+        font-size: 20px;
+        padding-right: 45px;
+        color: aliceblue;
+
+    }
+    form textarea{
+        padding: 5px 15px;
+        border: 1px solid #5c5c5c;
+        border-radius: 3px;
+        background: black;
+        font-size: 20px;
+        width: 100%;
+        color: aliceblue;
+    }
+    form button{
+        margin-top: 5px;
+        border: none;
+        background: solid goldenrod;
+        color: black;
+        padding: 10px 0;
+        width: 100%;
+        font-size: 20px;
+        font-weight: 800;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+.nav{
+  height: auto;
+  width: 100%;
+}
+.nav ul{
+  list-style-type: none;
+  margin : 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background-color:grey;
+}
+
+.nav li{
+  float: left;
+  display: block;
+  padding: 8px;
+  background-color:gray;   
+  border-right: 1px solid #bbb;
+}
+li :hover{
+  background-color:black  ;
+}
+.nav  li a  {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+
+}
+</style>
+<body>
+    <div class="nav">
+        <ul>
+            <li> <img src="images/logo4.jpg" wight="100" height="42"></li>
+            <li><a href="myhomepage.html">Home</a></li>
+            <li><a href="maincategory.html">Shop By Categories</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="newaboutus.html">About Us</a></li>
+            <h3 style="color:white;display: inline-block;margin: 15px 10px 5px">Estore</h3>
+            <li style="float:right"><a href="loginpage1.html">Login</a></li>
+        </ul>
+          </div>
+        </div>
+      </div>
+    <div class="container">
+        <form>
+            <h1>Tell us what you think</h1>
+            <div class="id">
+                <input type="text" placeholder="Full name">
+                <i class="user"></i>
+            </div>
+            <div class="id">
+                <input type="email" placeholder="Email address">
+                <i class="envelope"></i>
+            </div>
+            <textarea cols="15" rows="5" placeholder="Give your opinions here.."></textarea>
+            <button type="sumbit">Send</button>  
+        </form>
+    </div>
+    
+</body>
+</html>

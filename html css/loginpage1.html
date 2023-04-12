@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        /* background: url('https://images.unsplash.com/photo-1651557549811-0f18e3b32ca5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80'); */
+        background-image: url("images/login.jpg");
+        background-size: cover;
+    }
+    form{
+        margin-top: 50px;
+        text-align: center;
+        color: white;
+    }
+    input{
+        color: aliceblue;
+        display: block;
+        width: 350px;
+        height: 40px;
+        margin: 20px;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        border-bottom: 1px solid white  ;
+        background: transparent;
+    }
+    button{
+        width: 350px;
+        height: 40px;
+        font-size: 20px;
+        background-color: grey;
+        border: none;
+        color: black;
+        margin-top: 20px;
+    }
+    form h1{
+        margin-bottom: 20px;
+    }
+    ::placeholder{
+
+        color: whitesmoke;
+    }
+    h3{
+        color: aliceblue;
+        margin-top: 20px;
+    }
+    .box{
+position: absolute;
+top: 50%;
+left:50%;
+transform: translate(-50%,-50%);
+width: 400px;
+padding: 40px;
+background: rgba(0, 0, 0, 0.8);
+box-sizing: border-box;
+box-shadow:  0 15px 25px rgba(0,0,0,0.5);
+border-radius: 10px;
+}
+</style>
+
+<body>
+    <form>
+        <div class="box">
+        <h1>Login</h1>
+        <input id="username" type="email" name="" placeholder="Email">
+        <input id="password" type="password" name="" placeholder="Password">
+        <button type="submit">Login</button>
+        <h3>Don't have an acoount?</h3>
+            <button id="login-btn" type="submit"><a href="signup.html" style="text-decoration: none; color:black">Sign Up</a></button>
+    </form> 
+        </div>
+
+        <script src="server.js">
+            // Add event listener to login button
+            document.getElementById('login-btn').addEventListener('click', async () => {
+              const username = document.getElementById('username').value;
+              const password = document.getElementById('password').value;
+      
+              try {
+                const response = await fetch('/login', {
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/json'
+                  },
+                  body: JSON.stringify({ username, password })
+                });
+      
+                if (response.ok) {
+                  alert('Login successful');
+                } else {
+                  const error = await response.json();
+                  alert(`Error: ${error.error}`);
+                }
+              } catch (error) {
+                alert(`Error: ${error.message}`);
+              }
+            });
+          </script>
+</body>
+</html>

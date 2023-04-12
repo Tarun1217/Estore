@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+.nav{
+  height: auto;
+  width: 100%;
+}
+.nav ul{
+  list-style-type: none;
+  margin : 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: black;
+}
+
+.nav li{
+  float: left;
+  display: block;
+  padding: 8px;
+  background-color:gray;   
+  border-right: 1px solid #bbb;
+}
+li :hover{
+  background-color:black  ;
+}
+.nav  li a  {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+
+}
+body{
+    background-color: #0d0d0d;
+}
+/* shop by brand */
+.grid {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ width: 100%;
+ height:auto;
+margin-top: 100px;
+justify-content: center;
+
+}
+
+.grid-item {
+  background-color: black;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+  width: 25%;
+  height: 400px;
+  margin-left: 0px;
+  background-color: white;
+  transform: scale(0.8);
+  
+ 
+}
+
+.grid-item:hover {
+  transform: translateY(0);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+ 
+}
+
+.card-content {
+  display: flex;
+  margin-top:20px ;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-header {
+  font-size: 1.3em;
+  font-weight: 500;
+  color: #0d0d0d;
+ 
+}
+
+.card-text {
+
+  letter-spacing: 0.1rem;
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+.card-btn {
+  display: block;
+  width: 50%;
+  padding:10px;
+  font-size: 20px;
+  text-align: center;
+  
+  color: #3363ff;
+  background-color: #d8e0fd;
+  border: none;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+}
+
+.card-btn span {
+  margin-left: 1rem;
+  transition: 0.2s;
+}
+
+.card-btn:hover,
+.card-btn:active {
+  background-color: #c2cffc;
+}
+
+.card-btn:hover span,
+.card-btn:active span {
+  margin-left: 1.5rem;
+}
+.heading{
+  color:white;text-align:center;font-size:40px;
+  border-radius: 10px;
+  line-height: 10px;
+  margin-top: 200px;
+}
+.grid-thing {
+  background-color: black;
+  border-radius: 100px;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+  width: 25%;
+  height: 400px;
+  margin-left: 0 px;
+  background-color: white;
+  transform: scale(0.8);
+  float: left;
+  margin-bottom: 200px;
+  
+ 
+}
+
+.grid-thing:hover {
+  transform: translateY(0);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+
+</style>
+<body>
+    <div class="nav">
+        <ul>
+            <li> <img src="images/logo4.jpg" wight="100" height="42"></li>
+            <li><a href="myhomepage.html">Home</a></li>
+            <li><a href="maincategory.html">Shop By Categories</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="newaboutus.html">About Us</a></li>
+            <h3 style="color:white;display: inline-block;margin: 15px 10px 5px">Estore</h3>
+            <li style="float:right"><a href="loginpage1.html">Login</a></li>
+        </ul>
+          </div>
+        </div>
+      </div>
+
+      <div style="height:auto;height:40%;position:relative;">
+      <video autoplay muted loop style="height:100%;width:100%;padding:auto;">
+        <source src="images/video.mp4" type="video/mp4">
+      </video>
+      <div style="position:absolute;left:38%;bottom:20px;">
+        <div style="display:flex;justify-content: center;flex-direction: column;width:100%;text-align: center;">
+          <h1 style="font-size:80px;color:white;font-family:'Verdana';font-weight:600;line-height: 1%;margin:45px 0;"> Airpods</h1>
+          <p style="font-size:20px;color:white;font-family: Verdana;">3rd Gen</p>
+          <p style="font-size:20px;color:white;font-family: Verdana;"> $399</p>
+          <button style="width:40%;margin: auto;font-family: verdana;font-size: 15px;height: 30px;width: 80px;">BuyNow</button>
+        </div>
+        
+        </h1>
+      </div>
+    </div>
+      <!-- shop by category -->
+
+      <h1 class="heading" style="color:white;text-align:center;font-size:40px;
+      border-radius: 10px;
+      line-height: 10px;
+      margin-top: 200px;">Shop By category</h1>
+    <hr width="90px"  style="background-color:white;height:2px;margin-bottom: 100px;">
+    
+    
+        <div class="grid-thing">
+            <div class="card">
+              <img class="card-img" src="images/boat.jpg" alt="Rome" />
+              <div class="card-content">
+                <h1 class="card-header"></h1>
+                <p class="card-text">
+                  
+                </p>
+                <button class="card-btn">Headphones <span>&rarr;</span></button>
+              </div>
+            </div>
+          </div>
+          <div class="grid-thing">
+            <div class="card">
+              <img class="card-img" src="images/smartwatch.jpg" alt="Rome" />
+              <div class="card-content">
+                <h1 class="card-header"></h1>
+                <p class="card-text">
+                  
+                </p>
+                <button class="card-btn">Smart Watch <span>&rarr;</span></button>
+              </div>
+            </div>
+          </div>
+          <div class="grid-thing">
+            <div class="card">
+              <img class="card-img" src="images/dj.jpg" alt="Rome" />
+              <div class="card-content">
+                <h1 class="card-header"></h1>
+                <p class="card-text">
+                  
+                </p>
+                <button class="card-btn">Speakers <span>&rarr;</span></button>
+              </div>
+            </div>
+          </div>
+          <div class="grid-thing">
+            <div class="card">
+              <img class="card-img" src="images/laptop.jpg" alt="Rome" />
+              <div class="card-content">
+                <h1 class="card-header"></h1>
+                <p class="card-text">
+                  
+                </p>
+                <button class="card-btn">Gaming Laptops <span>&rarr;</span></button>
+              </div>
+            </div>
+          </div>
+      </div>
+
+
+      <!-- shope by brand -->
+
+
+      <h1 class="heading" style="color:white;text-align:center;font-size:40px;
+      border-radius: 10px;
+      line-height: 10px;
+      margin-top: 200px;">Shop By Brand</h1>
+    <hr width="90px"  style="background-color:white;height:2px;">
+    
+    <div class="grid">
+        <div class="grid-item">
+          <div class="card">
+            <img class="card-img" src="images/hp.jpg" alt="Rome" />
+            <div class="card-content">
+              <h1 class="card-header"></h1>
+              <p class="card-text">
+                
+              </p>
+              <button class="card-btn">Visit <span>&rarr;</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="card">
+            <img
+              class="card-img"
+              src="images/sony.jpg"alt="Grand Canyon"
+            />
+            <div class="card-content">
+              <h1 class="card-header"></h1>
+              <p class="card-text">
+              </p>
+              <button class="card-btn">Visit <span>&rarr;</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="card">
+            <img class="card-img" src="images/bose.jpg" alt="Maldives" />
+            <div class="card-content">
+              <h1 class="card-header"></h1>
+              <p class="card-text">
+                
+              </p>
+              <button class="card-btn">Visit <span>&rarr;</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="card">
+            <img class="card-img" src="images/boatLogo.jpg" alt="Rome" />
+            <div class="card-content">
+              <h1 class="card-header"></h1>
+              <p class="card-text">
+                
+              </p>
+              <button class="card-btn">Visit <span>&rarr;</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+            <div class="card">
+              <img class="card-img" src="images/canon.jpg" alt="Rome" />
+              <div class="card-content">
+                <h1 class="card-header"></h1>
+                <p class="card-text">
+                  
+                </p>
+                <button class="card-btn">Visit <span>&rarr;</span></button>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="card">
+              <img class="card-img" src="images/lg.jpg" alt="Rome" />
+              <div class="card-content">
+                <h1 class="card-header"></h1>
+                <p class="card-text">
+                  
+                </p>
+                <button class="card-btn">Visit <span>&rarr;</span></button>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="card">
+              <img class="card-img" src="images/samsung.jpg" alt="Rome" />
+              <div class="card-content">
+                <h1 class="card-header"></h1>
+                <p class="card-text">
+                  
+                </p>
+                <button class="card-btn">Visit <span>&rarr;</span></button>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="card">
+              <img class="card-img" src="images/noise.jpg" alt="Rome" />
+              <div class="card-content">
+                <h1 class="card-header"></h1>
+                <p class="card-text">
+                  
+                </p>
+                <button class="card-btn">Visit <span>&rarr;</span></button>
+              </div>
+            </div>
+          </div>
+      </div>
+      
+  
+</body>
+</html>
